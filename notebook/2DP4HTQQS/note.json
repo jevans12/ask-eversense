@@ -1,0 +1,280 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\nhttps://us.eversensedms.com/Account/Login?ReturnUrl\u003dAutoTimeout",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 18:24:08.698",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003ca href\u003d\"https://us.eversensedms.com/Account/Login?ReturnUrl\u003dAutoTimeout\"\u003ehttps://us.eversensedms.com/Account/Login?ReturnUrl\u003dAutoTimeout\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1535912645857_-1720008023",
+      "id": "20180902-182405_1928928430",
+      "dateCreated": "2018-09-02 18:24:05.857",
+      "dateStarted": "2018-09-02 18:24:08.700",
+      "dateFinished": "2018-09-02 18:24:08.802",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n\u003c?xml version\u003d\"1.0\" encoding\u003d\"utf-8\"?\u003e\n\u003csoap:Envelope \nxmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem\u003d\"http://tempuri.org/http://tempuri.org/\"\u003e\n\u003csoap:Header xmlns:wsa\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\u003cwsa:Action\u003ehttp://tempuri.org/IAgentServerService/GetFollowingUserPatientEvents\u003c/wsa:Action\u003e\u003cwsa:To\u003ehttps://usservices.eversensedms.com/AgentServerHost.svc\u003c/wsa:To\u003e\u003c/soap:Header\u003e\u003csoap:Body\u003e\n\u003ctem:GetFollowingUserPatientEvents\u003e\n\u003ctem:UserID\u003e#####\u003c/tem:UserID\u003e\n\u003ctem:FollowerUserId\u003e#####\u003c/tem:FollowerUserId\u003e\n\u003ctem:PasswordHash\u003e#####\u003c/tem:PasswordHash\u003e\n\u003ctem:PasswordBinary\u003e#####\u003c/tem:PasswordBinary\u003e\n\u003c/tem:GetFollowingUserPatientEvents\u003e \n\u003c/soap:Body\u003e \n\u003c/soap:Envelope\u003e\n",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 18:17:58.150",
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579758_-966716407",
+      "id": "20180901-182324_1591818174",
+      "dateCreated": "2018-09-02 17:32:59.758",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\u003csoap:Envelope \nxmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem\u003d\"http://tempuri.org/\"\u003e\n\u003csoap:Header xmlns:wsa\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\u003cwsa:Action\u003ehttp://tempuri.org/IAgentServerService/GetUserIDByUserEmail\u003c/wsa:Action\u003e\u003cwsa:To\u003ehttps://usservices.eversensedms.com/AgentServerHost.svc\u003c/wsa:To\u003e\u003c/soap:Header\u003e\u003csoap:Body\u003e\n\u003ctem:GetUserIDByUserEmail\u003e\n\u003ctem:userEmail\u003e########\u003c/tem:userEmail\u003e\n\u003c/tem:GetUserIDByUserEmail\u003e \n\u003c/soap:Body\u003e \n\u003c/soap:Envelope",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 17:34:45.329",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909649519_-1149368780",
+      "id": "20180902-173409_1670462795",
+      "dateCreated": "2018-09-02 17:34:09.519",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import requests\nimport xml.etree.ElementTree as ET\n\nurl\u003d\"https://usservices.eversensedms.com/AgentServerHost.svc\"\nheaders \u003d {\u0027Content-Type\u0027: \u0027application/soap+xml; charset\u003dutf-8\u0027,\u0027User-Agent\u0027: \u0027Eversense%20NOW/1 CFNetwork/902.2 Darwin/17.7.0\u0027,\u0027Accept-Encoding\u0027: \u0027gzip, deflate\u0027,\u0027Accept\u0027: \u0027*/*\u0027,\u0027Accept-Language\u0027: \u0027en-us\u0027,\u0027Host\u0027: \u0027usservices.eversensedms.com\u0027, \u0027Connection\u0027:\u0027close\u0027}\n\n#add soapAction: insert_action per method call to http header\ngetValuesAction \u003d \u0027http://tempuri.org/IAgentServerService/GetCurrentValues\u0027\ngetIdAction \u003d \u0027http://tempuri.org/IAgentServerService/GetUserIDByUserEmail\u0027\n\ngetCurrentValuesRequest \u003d \"\"\"\u003c?xml version\u003d\"1.0\" encoding\u003d\"utf-8\"?\u003e\n\u003csoap:Envelope\nxmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem\u003d\"http://tempuri.org/\"\u003e\n  \u003csoap:Header xmlns:wsa\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\n    \u003cwsa:Action\u003ehttp://tempuri.org/IAgentServerService/GetCurrentValues\u003c/wsa:Action\u003e\n    \u003cwsa:To\u003ehttps://usservices.eversensedms.com/AgentServerHost.svc\u003c/wsa:To\u003e\n  \u003c/soap:Header\u003e\n  \u003csoap:Body\u003e\n    \u003ctem:GetCurrentValues\u003e\n      \u003ctem:UserID\u003e#####\u003c/tem:UserID\u003e\n      \u003ctem:FollowerUserId\u003e#####\u003c/tem:FollowerUserId\u003e\n      \u003ctem:PasswordHash\u003e#####\u003c/tem:PasswordHash\u003e\n      \u003ctem:PasswordBinary\u003e#####\u003c/tem:PasswordBinary\u003e\n    \u003c/tem:GetCurrentValues\u003e\n  \u003c/soap:Body\u003e\n\u003c/soap:Envelope\u003e\"\"\"\n\ngetUserIDByUserEmailRequest \u003d \"\"\"\u003c?xml version\u003d\"1.0\" encoding\u003d\"utf-8\"?\u003e\n\u003csoap:Envelope \nxmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem\u003d\"http://tempuri.org/\"\u003e\n\u003csoap:Header xmlns:wsa\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\u003cwsa:Action\u003ehttp://tempuri.org/IAgentServerService/GetUserIDByUserEmail\u003c/wsa:Action\u003e\u003cwsa:To\u003ehttps://usservices.eversensedms.com/AgentServerHost.svc\u003c/wsa:To\u003e\u003c/soap:Header\u003e\u003csoap:Body\u003e\n\u003ctem:GetUserIDByUserEmail\u003e\n\u003ctem:userEmail\u003e#####\u003c/tem:userEmail\u003e\n\u003c/tem:GetUserIDByUserEmail\u003e \n\u003c/soap:Body\u003e \n\u003c/soap:Envelope\u003e\"\"\"\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 18:19:04.923",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579759_-106838119",
+      "id": "20180901-205715_20246538",
+      "dateCreated": "2018-09-02 17:32:59.759",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 17:40:00.912",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579759_1212440613",
+      "id": "20180902-021036_1987863408",
+      "dateCreated": "2018-09-02 17:32:59.760",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\u0027xml\n\u003c?xml version\u003d\"1.0\"?\u003e\n\u003cs:Envelope xmlns:s\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\n  \u003cs:Header\u003e\n    \u003ca:Action s:mustUnderstand\u003d\"1\"\u003ehttp://tempuri.org/IAgentServerService/GetCurrentValuesResponse\u003c/a:Action\u003e\n  \u003c/s:Header\u003e\n  \u003cs:Body\u003e\n    \u003cGetCurrentValuesResponse xmlns\u003d\"http://tempuri.org/\"\u003e\n      \u003cGetCurrentValuesResult\u003e[{\"UserID\":#####,\"CurrentGlucose\":0,\"CGTime\":\"2001-01-01T00:00:00\",\"GlucoseTrend\":0,\"BatteryStrength\":null,\"SignalStrength\":null}]\u003c/GetCurrentValuesResult\u003e\n    \u003c/GetCurrentValuesResponse\u003e\n  \u003c/s:Body\u003e\n\u003c/s:Envelope\u003e\n\u0027xml\u0027",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 17:41:43.967",
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579760_-902846221",
+      "id": "20180902-002745_1319053980",
+      "dateCreated": "2018-09-02 17:32:59.760",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "content \u003d \"\"\"\u003cs:Envelope xmlns:s\u003d\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a\u003d\"http://www.w3.org/2005/08/addressing\"\u003e\u003cs:Header\u003e\u003ca:Action s:mustUnderstand\u003d\"1\"\u003ehttp://tempuri.org/IAgentServerService/GetCurrentValuesResponse\u003c/a:Action\u003e\u003c/s:Header\u003e\u003cs:Body\u003e\u003cGetCurrentValuesResponse xmlns\u003d\"http://tempuri.org/\"\u003e\u003cGetCurrentValuesResult\u003e[{\"UserID\":#####,\"CurrentGlucose\":0,\"CGTime\":\"2001-01-01T00:00:00\",\"GlucoseTrend\":0,\"BatteryStrength\":null,\"SignalStrength\":null}]\u003c/GetCurrentValuesResult\u003e\u003c/GetCurrentValuesResponse\u003e\u003c/s:Body\u003e\u003c/s:Envelope\u003e\"\"\"\n\nprint content",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 18:19:22.624",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579761_1847782357",
+      "id": "20180902-001746_1291015604",
+      "dateCreated": "2018-09-02 17:32:59.761",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import xml.etree.ElementTree as ET\n\n# create element tree object\nroot \u003d ET.fromstring(content)\n\n# iterate news items\nfor item in root.iter(\u0027{http://tempuri.org/}GetCurrentValuesResult\u0027):\n        rank \u003d item.text\n        a,glucose,c,trend,e,f \u003d rank.split(\",\")\n        glucose_label,glucose_level \u003d glucose.split(\":\")\n        trend_label, trend_level \u003d trend.split(\":\")\n        print glucose_level, trend_level\n        \n\n        \n        \n",
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 18:21:02.156",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579761_57844675",
+      "id": "20180901-231519_1859617406",
+      "dateCreated": "2018-09-02 17:32:59.761",
+      "dateStarted": "2018-09-02 18:19:25.720",
+      "dateFinished": "2018-09-02 18:19:25.734",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "dateUpdated": "2018-09-02 17:32:59.764",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1535909579763_790109449",
+      "id": "20180902-001419_1891702437",
+      "dateCreated": "2018-09-02 17:32:59.763",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Ask Sense Redacted",
+  "id": "2DP4HTQQS",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "python:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
