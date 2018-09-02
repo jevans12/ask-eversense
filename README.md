@@ -3,7 +3,7 @@ Ask EverSense Alexa Skill
 1st commit. See Zeppelin notebook for code. 
 Disclaimer: 
 
-All information, thought, and code described here is intended for informational and educational purposes only. jevans12 currently makes no attempt at HIPAA privacy compliance. Use of code from github.com is without warranty or support of any kind. Please review the LICENSE found within each repository for further details. Use Nightscout at your own risk, and do not use the information or code to make medical decisions
+All information, thought, and code described here is intended for informational and educational purposes only. jevans12 currently makes no attempt at HIPAA privacy compliance. Use of code from github.com is without warranty or support of any kind. Please review the LICENSE found within each repository for further details. Use this at your own risk, and do not use the information or code to make medical decisions
 
 Workflow todo:
 1. download eversense and eversense now apps
